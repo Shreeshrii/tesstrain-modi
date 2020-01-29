@@ -1,0 +1,24 @@
+UNLV-ISRI OCR Accuracy Report Version 5.1
+-----------------------------------------
+   12990   Characters
+      99   Errors
+   99.24%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   99.24%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+      74       21        4       99   Unmarked
+      74       21        4       99   Total
+
+   Count   Missed   %Right
+   12010       95    99.21   Unassigned
+     980        0   100.00   ASCII Spacing Characters
+   12990       95    99.27   Total
+
+  Errors   Marked   Correct-Generated
+      20        0   {

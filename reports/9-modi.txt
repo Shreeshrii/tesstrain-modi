@@ -1,0 +1,81 @@
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_1.206_93020_169100.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --convert_to_int \
+          --model_output data/modi/tessdata_fast/modiLayer_1.206_93020_169100.traineddata
+Loaded file data/modi/checkpoints/modiLayer_1.206_93020_169100.checkpoint, unpacking...
+data/modi/tessdata_fast/modiLayer_1.206_93020_169100.traineddata
+modiLayer_1.206_93020_169100.traineddata
+modiLayer_1.206_93020_169100
+
+***** Modi *****   modiLayer_1.206_93020_169100  
+
+
+----------------------------------------------------------------------------- modi
+
+------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_1.206_93020_169100
+iconv: illegal input sequence at position 1362
+UNLV-ISRI OCR Accuracy Report Version 5.1
+-----------------------------------------
+   12990   Characters
+      99   Errors
+   99.24%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   99.24%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+      74       21        4       99   Unmarked
+      74       21        4       99   Total
+
+   Count   Missed   %Right
+   12010       95    99.21   Unassigned
+     980        0   100.00   ASCII Spacing Characters
+   12990       95    99.27   Total
+
+  Errors   Marked   Correct-Generated
+      20        0   {
+-----------------------------------------------------------------------------
+
+------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_1.206_93020_169100
+iconv: illegal input sequence at position 1562
+UNLV-ISRI OCR Accuracy Report Version 5.1
+-----------------------------------------
+   15650   Characters
+    1502   Errors
+   90.40%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   90.40%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+    1319       76      107     1502   Unmarked
+    1319       76      107     1502   Total
+
+   Count   Missed   %Right
+   14054     1261    91.03   Unassigned
+    1239       90    92.74   ASCII Spacing Characters
+     348       43    87.64   ASCII Special Symbols
+       9        1    88.89   General Punctuation
+   15650     1395    91.09   Total
+
+  Errors   Marked   Correct-Generated
+     129        0   {
+-----------------------------------------------------------------------------
+iconv: illegal input sequence at position 1562
+
+-----------------------------------------------------------------------------
+
+*************************************************************************
+real 64.90
+user 68.81
+sys 0.66
