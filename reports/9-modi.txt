@@ -1,81 +1,91 @@
+rm: cannot remove 'data/modi/tessdata_fast/*.traineddata': No such file or directory
+mkdir data/modi/tessdata_best
+mkdir data/modi/tessdata_fast
 lstmtraining \
           --stop_training \
-          --continue_from data/modi/checkpoints/modiLayer_1.206_93020_169100.checkpoint \
+          --continue_from data/modi/checkpoints/modiLayer_2.966_60550_80900.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --model_output data/modi/tessdata_best/modiLayer_2.966_60550_80900.traineddata
+Loaded file data/modi/checkpoints/modiLayer_2.966_60550_80900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_2.966_60550_80900.checkpoint \
           --traineddata data/modi/modi.traineddata \
           --convert_to_int \
-          --model_output data/modi/tessdata_fast/modiLayer_1.206_93020_169100.traineddata
-Loaded file data/modi/checkpoints/modiLayer_1.206_93020_169100.checkpoint, unpacking...
-data/modi/tessdata_fast/modiLayer_1.206_93020_169100.traineddata
-modiLayer_1.206_93020_169100.traineddata
-modiLayer_1.206_93020_169100
+          --model_output data/modi/tessdata_fast/modiLayer_2.966_60550_80900.traineddata
+Loaded file data/modi/checkpoints/modiLayer_2.966_60550_80900.checkpoint, unpacking...
+data/modi/tessdata_fast/modiLayer_2.966_60550_80900.traineddata
+modiLayer_2.966_60550_80900.traineddata
+modiLayer_2.966_60550_80900
 
-***** Modi *****   modiLayer_1.206_93020_169100  
+***** Modi *****   modiLayer_2.966_60550_80900  
 
 
 ----------------------------------------------------------------------------- modi
 
-------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_1.206_93020_169100
-iconv: illegal input sequence at position 1362
-UNLV-ISRI OCR Accuracy Report Version 5.1
------------------------------------------
-   12990   Characters
-      99   Errors
-   99.24%  Accuracy
+------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_2.966_60550_80900
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   12471   Characters
+     167   Errors
+   98.66%  Accuracy
 
        0   Reject Characters
        0   Suspect Markers
        0   False Marks
     0.00%  Characters Marked
-   99.24%  Accuracy After Correction
+   98.66%  Accuracy After Correction
 
      Ins    Subst      Del   Errors
        0        0        0        0   Marked
-      74       21        4       99   Unmarked
-      74       21        4       99   Total
+      89       64       14      167   Unmarked
+      89       64       14      167   Total
 
    Count   Missed   %Right
-   12010       95    99.21   Unassigned
-     980        0   100.00   ASCII Spacing Characters
-   12990       95    99.27   Total
+   10704      153    98.57   Unassigned
+    1767        0   100.00   ASCII Spacing Characters
+   12471      153    98.77   Total
 
   Errors   Marked   Correct-Generated
-      20        0   {
+      38        0   {𑘨◌𑘿}-{}
+      11        0   {◌𑘽}-{}
+      10        0   {𑘟◌𑘰}-{𑘤}
+
 -----------------------------------------------------------------------------
 
-------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_1.206_93020_169100
-iconv: illegal input sequence at position 1562
-UNLV-ISRI OCR Accuracy Report Version 5.1
------------------------------------------
-   15650   Characters
-    1502   Errors
-   90.40%  Accuracy
+------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_2.966_60550_80900
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   17111   Characters
+    2632   Errors
+   84.62%  Accuracy
 
        0   Reject Characters
        0   Suspect Markers
        0   False Marks
     0.00%  Characters Marked
-   90.40%  Accuracy After Correction
+   84.62%  Accuracy After Correction
 
      Ins    Subst      Del   Errors
        0        0        0        0   Marked
-    1319       76      107     1502   Unmarked
-    1319       76      107     1502   Total
+    2108      309      215     2632   Unmarked
+    2108      309      215     2632   Total
 
    Count   Missed   %Right
-   14054     1261    91.03   Unassigned
-    1239       90    92.74   ASCII Spacing Characters
-     348       43    87.64   ASCII Special Symbols
-       9        1    88.89   General Punctuation
-   15650     1395    91.09   Total
+   13812     1936    85.98   Unassigned
+    2091      239    88.57   ASCII Spacing Characters
+     928      166    82.11   ASCII Special Symbols
+     236       70    70.34   ASCII Digits
+      44        6    86.36   General Punctuation
+   17111     2417    85.87   Total
 
   Errors   Marked   Correct-Generated
-     129        0   {
+
 -----------------------------------------------------------------------------
-iconv: illegal input sequence at position 1562
 
 -----------------------------------------------------------------------------
 
 *************************************************************************
-real 64.90
-user 68.81
-sys 0.66
+real 149.56
+user 135.46
+sys 1.44

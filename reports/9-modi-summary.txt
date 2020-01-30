@@ -1,6 +1,7 @@
-***** Modi *****   modiLayer_1.206_93020_169100  
-------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_1.206_93020_169100
-   99.24%  Accuracy
-------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_1.206_93020_169100
-   90.40%  Accuracy
-       9        1    88.89   General Punctuation
+***** Modi *****   modiLayer_2.966_60550_80900  
+------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_2.966_60550_80900
+   98.66%  Accuracy
+------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_2.966_60550_80900
+   84.62%  Accuracy
+     236       70    70.34   ASCII Digits
+      44        6    86.36   General Punctuation
