@@ -1,15 +1,14 @@
 #!/bin/bash
-# nohup bash 0-makemodi.sh > 0.log &
 
 unicodefontdir=/home/ubuntu/.fonts/modi
 MODEL=modi
+numlines=20
 
 traininginput=langdata/$MODEL.training_text
 fontlist=langdata/$MODEL.fontslist.txt
 fontcount=$(wc -l < "$fontlist")
 linecount=$(wc -l < "$traininginput")
 perfontcount=$(( linecount / fontcount))
-numlines=20
 numfiles=$(( perfontcount / numlines))
 
 # files created by script during processing
