@@ -25,7 +25,6 @@ Replace the top layer training is being done using [2 fonts](https://github.com/
 * This Marathi text in Devanagari text was converted to Modi script using [Aksharamukha](https://aksharamukha.appspot.com/upload/).
 
 * text2image and tesseract were used to create lstmf files from the training text and fonts. 
-
-** mulipage tif with single line on each page to get the degrade and distortion effects
-** 20 lines/pages in each tif
+    * mulipage tif with single line on each page to get the degrade and distortion effects
+    * 20 lines/pages in each tif
 

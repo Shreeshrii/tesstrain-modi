@@ -2,7 +2,7 @@
 *test*
 *xxx*
 1-txt2lstmf*
-data/*
+data/*/
 data/*txt
 data/*lstmf
 data/*unicharset
