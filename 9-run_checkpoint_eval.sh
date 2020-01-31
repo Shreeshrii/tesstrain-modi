@@ -1,9 +1,9 @@
 #!/bin/sh
-# nohup time -p bash  9-run_checkpoint_eval.sh modi 1 > reports/9-modi.txt & 
+# nohup time -p bash  9-run_checkpoint_eval.sh 1 > reports/9-modi.txt & 
 
 SCRIPTPATH=`pwd`
-LANG=$1
-HEADCOUNT=$2
+LANG=modi
+HEADCOUNT=$1
 mkdir -p $SCRIPTPATH/reports
 
 # make traineddata files from last three checkpoints
@@ -57,4 +57,4 @@ for TRAINEDDATA in $TRAINEDDATAFILES  ; do
 done
 rm tmpcheckpoints
 
-egrep 'Modi|Accuracy$|Digits|Punctuation' reports/9-modi.txt > reports/9-modi-summary.txt
+egrep 'Unassigned|Accuracy$|Digits|Punctuation' reports/9-$LANG.txt > reports/9-$LANG-summary.txt

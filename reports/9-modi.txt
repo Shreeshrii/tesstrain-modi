@@ -1,0 +1,92 @@
+rm: cannot remove 'data/modi/tessdata_fast/*.traineddata': No such file or directory
+mkdir data/modi/tessdata_best
+mkdir data/modi/tessdata_fast
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_3.509_27359_31900.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --model_output data/modi/tessdata_best/modiLayer_3.509_27359_31900.traineddata
+Loaded file data/modi/checkpoints/modiLayer_3.509_27359_31900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_3.509_27359_31900.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --convert_to_int \
+          --model_output data/modi/tessdata_fast/modiLayer_3.509_27359_31900.traineddata
+Loaded file data/modi/checkpoints/modiLayer_3.509_27359_31900.checkpoint, unpacking...
+data/modi/tessdata_fast/modiLayer_3.509_27359_31900.traineddata
+modiLayer_3.509_27359_31900.traineddata
+modiLayer_3.509_27359_31900
+
+***** Modi *****   modiLayer_3.509_27359_31900  
+
+
+----------------------------------------------------------------------------- modi
+
+------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_3.509_27359_31900
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   12546   Characters
+     212   Errors
+   98.31%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   98.31%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+     133       65       14      212   Unmarked
+     133       65       14      212   Total
+
+   Count   Missed   %Right
+   10844      198    98.17   Unassigned
+    1702        0   100.00   ASCII Spacing Characters
+   12546      198    98.42   Total
+
+  Errors   Marked   Correct-Generated
+      34        0   {𑘨◌𑘿}-{}
+      11        0   {◌𑘿}-{}
+       8        0   {𑘨}-{}
+
+-----------------------------------------------------------------------------
+
+------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_3.509_27359_31900
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   16808   Characters
+    2072   Errors
+   87.67%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   87.67%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+    1732      161      179     2072   Unmarked
+    1732      161      179     2072   Total
+
+   Count   Missed   %Right
+   13733     1555    88.68   Unassigned
+    2099      199    90.52   ASCII Spacing Characters
+     916      132    85.59   ASCII Special Symbols
+      60        7    88.33   General Punctuation
+   16808     1893    88.74   Total
+
+  Errors   Marked   Correct-Generated
+     117        0   {-𑘧◌𑘰 _𑘡𑘪...}-{}
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+*************************************************************************
+9-run_checkpoint_eval.sh: line 58: tmpcheckpoints: command not found
+real 153.42
+user 138.59
+sys 1.65

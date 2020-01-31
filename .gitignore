@@ -11,5 +11,5 @@ data/fast_*
 data/radical*
 gt/*
 langdata/*bigrams
-reports/*/*
 reports/*lstmeval*
+tmp*
