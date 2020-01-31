@@ -1,4 +1,5 @@
 #!/bin/bash
+# nohup bash 0-makemodi.sh > 0.log &
 
 unicodefontdir=/home/ubuntu/.fonts/modi
 MODEL=modi
