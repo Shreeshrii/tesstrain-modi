@@ -4,6 +4,8 @@
 SCRIPTPATH=`pwd`
 LANG=modi
 HEADCOUNT=$1
+FONTLIST=$SCRIPTPATH/langdata/modi.fontslist.txt
+
 mkdir -p $SCRIPTPATH/reports
 
 # make traineddata files from last three checkpoints
@@ -23,7 +25,6 @@ for TRAINEDDATA in $TRAINEDDATAFILES  ; do
 	echo ${TRAINEDDATAFILE%.*}
       echo -e  "\n***** Modi *****   ${TRAINEDDATAFILE%.*}  \n"
            for PREFIX in $LANG ; do
-			   FONTLIST=$SCRIPTPATH/langdata/$PREFIX.fontslist.txt
                LISTEVAL=$SCRIPTPATH/data/$PREFIX/list.eval
                REPORTSPATH=$SCRIPTPATH/reports/$PREFIX-eval-${TRAINEDDATAFILE%.*}
                rm -rf $REPORTSPATH

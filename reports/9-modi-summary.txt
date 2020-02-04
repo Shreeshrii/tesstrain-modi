@@ -1,5 +1,25 @@
-   98.31%  Accuracy
-   10844      198    98.17   Unassigned
-   87.67%  Accuracy
-   13733     1555    88.68   Unassigned
+   99.24%  Accuracy
+   10844       78    99.28   Unassigned
+   88.56%  Accuracy
+   13733     1432    89.57   Unassigned
+      60        6    90.00   General Punctuation
+   99.06%  Accuracy
+   10844       99    99.09   Unassigned
+   88.57%  Accuracy
+   13733     1433    89.57   Unassigned
+      60        6    90.00   General Punctuation
+   99.18%  Accuracy
+   10844       83    99.23   Unassigned
+   88.54%  Accuracy
+   13733     1435    89.55   Unassigned
+      60        7    88.33   General Punctuation
+   99.16%  Accuracy
+   10844       87    99.20   Unassigned
+   88.46%  Accuracy
+   13733     1439    89.52   Unassigned
+      60        6    90.00   General Punctuation
+   99.42%  Accuracy
+   10844       56    99.48   Unassigned
+   88.51%  Accuracy
+   13733     1427    89.61   Unassigned
       60        7    88.33   General Punctuation

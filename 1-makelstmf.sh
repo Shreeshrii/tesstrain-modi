@@ -1,11 +1,11 @@
 #!/bin/bash
 
 unicodefontdir=/home/ubuntu/.fonts/modi
-MODEL=modi
+MODEL=modinew
 numlines=20
-
+fontlist=langdata/modi.fontslist.txt
 traininginput=langdata/$MODEL.training_text
-fontlist=langdata/$MODEL.fontslist.txt
+
 fontcount=$(wc -l < "$fontlist")
 linecount=$(wc -l < "$traininginput")
 perfontcount=$(( linecount / fontcount))

@@ -1,82 +1,131 @@
-rm: cannot remove 'data/modi/tessdata_fast/*.traineddata': No such file or directory
-mkdir data/modi/tessdata_best
-mkdir data/modi/tessdata_fast
 lstmtraining \
           --stop_training \
-          --continue_from data/modi/checkpoints/modiLayer_3.509_27359_31900.checkpoint \
+          --continue_from data/modi/checkpoints/modiLayer_1.017_157724_324000.checkpoint \
           --traineddata data/modi/modi.traineddata \
-          --model_output data/modi/tessdata_best/modiLayer_3.509_27359_31900.traineddata
-Loaded file data/modi/checkpoints/modiLayer_3.509_27359_31900.checkpoint, unpacking...
+          --model_output data/modi/tessdata_best/modiLayer_1.017_157724_324000.traineddata
+Loaded file data/modi/checkpoints/modiLayer_1.017_157724_324000.checkpoint, unpacking...
 lstmtraining \
           --stop_training \
-          --continue_from data/modi/checkpoints/modiLayer_3.509_27359_31900.checkpoint \
+          --continue_from data/modi/checkpoints/modiLayer_1.017_157724_324000.checkpoint \
           --traineddata data/modi/modi.traineddata \
           --convert_to_int \
-          --model_output data/modi/tessdata_fast/modiLayer_3.509_27359_31900.traineddata
-Loaded file data/modi/checkpoints/modiLayer_3.509_27359_31900.checkpoint, unpacking...
-data/modi/tessdata_fast/modiLayer_3.509_27359_31900.traineddata
-modiLayer_3.509_27359_31900.traineddata
-modiLayer_3.509_27359_31900
+          --model_output data/modi/tessdata_fast/modiLayer_1.017_157724_324000.traineddata
+Loaded file data/modi/checkpoints/modiLayer_1.017_157724_324000.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_1.066_143581_283300.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --model_output data/modi/tessdata_best/modiLayer_1.066_143581_283300.traineddata
+Loaded file data/modi/checkpoints/modiLayer_1.066_143581_283300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_1.066_143581_283300.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --convert_to_int \
+          --model_output data/modi/tessdata_fast/modiLayer_1.066_143581_283300.traineddata
+Loaded file data/modi/checkpoints/modiLayer_1.066_143581_283300.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_1.107_133385_254800.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --model_output data/modi/tessdata_best/modiLayer_1.107_133385_254800.traineddata
+Loaded file data/modi/checkpoints/modiLayer_1.107_133385_254800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_1.107_133385_254800.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --convert_to_int \
+          --model_output data/modi/tessdata_fast/modiLayer_1.107_133385_254800.traineddata
+Loaded file data/modi/checkpoints/modiLayer_1.107_133385_254800.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_1.159_132711_252900.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --model_output data/modi/tessdata_best/modiLayer_1.159_132711_252900.traineddata
+Loaded file data/modi/checkpoints/modiLayer_1.159_132711_252900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_1.159_132711_252900.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --convert_to_int \
+          --model_output data/modi/tessdata_fast/modiLayer_1.159_132711_252900.traineddata
+Loaded file data/modi/checkpoints/modiLayer_1.159_132711_252900.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_1.207_131700_250100.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --model_output data/modi/tessdata_best/modiLayer_1.207_131700_250100.traineddata
+Loaded file data/modi/checkpoints/modiLayer_1.207_131700_250100.checkpoint, unpacking...
+lstmtraining \
+          --stop_training \
+          --continue_from data/modi/checkpoints/modiLayer_1.207_131700_250100.checkpoint \
+          --traineddata data/modi/modi.traineddata \
+          --convert_to_int \
+          --model_output data/modi/tessdata_fast/modiLayer_1.207_131700_250100.traineddata
+Loaded file data/modi/checkpoints/modiLayer_1.207_131700_250100.checkpoint, unpacking...
+data/modi/tessdata_fast/modiLayer_1.017_157724_324000.traineddata
+modiLayer_1.017_157724_324000.traineddata
+modiLayer_1.017_157724_324000
 
-***** Modi *****   modiLayer_3.509_27359_31900  
+***** Modi *****   modiLayer_1.017_157724_324000  
 
 
 ----------------------------------------------------------------------------- modi
 
-------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_3.509_27359_31900
+------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_1.017_157724_324000
 ocreval Accuracy Report Version 7.0
 -----------------------------------
    12546   Characters
-     212   Errors
-   98.31%  Accuracy
+      95   Errors
+   99.24%  Accuracy
 
        0   Reject Characters
        0   Suspect Markers
        0   False Marks
     0.00%  Characters Marked
-   98.31%  Accuracy After Correction
+   99.24%  Accuracy After Correction
 
      Ins    Subst      Del   Errors
        0        0        0        0   Marked
-     133       65       14      212   Unmarked
-     133       65       14      212   Total
+      40       38       17       95   Unmarked
+      40       38       17       95   Total
 
    Count   Missed   %Right
-   10844      198    98.17   Unassigned
+   10844       78    99.28   Unassigned
     1702        0   100.00   ASCII Spacing Characters
-   12546      198    98.42   Total
+   12546       78    99.38   Total
 
   Errors   Marked   Correct-Generated
-      34        0   {𑘨◌𑘿}-{}
-      11        0   {◌𑘿}-{}
-       8        0   {𑘨}-{}
+      10        0   {𑘨◌𑘿}-{}
+       6        0   {}-{𑘨◌𑘿}
+       5        0   {◌𑘽}-{}
 
 -----------------------------------------------------------------------------
 
-------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_3.509_27359_31900
+------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_1.017_157724_324000
 ocreval Accuracy Report Version 7.0
 -----------------------------------
    16808   Characters
-    2072   Errors
-   87.67%  Accuracy
+    1922   Errors
+   88.56%  Accuracy
 
        0   Reject Characters
        0   Suspect Markers
        0   False Marks
     0.00%  Characters Marked
-   87.67%  Accuracy After Correction
+   88.56%  Accuracy After Correction
 
      Ins    Subst      Del   Errors
        0        0        0        0   Marked
-    1732      161      179     2072   Unmarked
-    1732      161      179     2072   Total
+    1633      118      171     1922   Unmarked
+    1633      118      171     1922   Total
 
    Count   Missed   %Right
-   13733     1555    88.68   Unassigned
-    2099      199    90.52   ASCII Spacing Characters
-     916      132    85.59   ASCII Special Symbols
-      60        7    88.33   General Punctuation
-   16808     1893    88.74   Total
+   13733     1432    89.57   Unassigned
+    2099      197    90.61   ASCII Spacing Characters
+     916      116    87.34   ASCII Special Symbols
+      60        6    90.00   General Punctuation
+   16808     1751    89.58   Total
 
   Errors   Marked   Correct-Generated
      117        0   {-𑘧◌𑘰 _𑘡𑘪...}-{}
@@ -86,7 +135,294 @@ ocreval Accuracy Report Version 7.0
 -----------------------------------------------------------------------------
 
 *************************************************************************
-9-run_checkpoint_eval.sh: line 58: tmpcheckpoints: command not found
-real 153.42
-user 138.59
-sys 1.65
+data/modi/tessdata_fast/modiLayer_1.066_143581_283300.traineddata
+modiLayer_1.066_143581_283300.traineddata
+modiLayer_1.066_143581_283300
+
+***** Modi *****   modiLayer_1.066_143581_283300  
+
+
+----------------------------------------------------------------------------- modi
+
+------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_1.066_143581_283300
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   12546   Characters
+     118   Errors
+   99.06%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   99.06%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+      57       42       19      118   Unmarked
+      57       42       19      118   Total
+
+   Count   Missed   %Right
+   10844       99    99.09   Unassigned
+    1702        0   100.00   ASCII Spacing Characters
+   12546       99    99.21   Total
+
+  Errors   Marked   Correct-Generated
+      18        0   {𑘨◌𑘿}-{}
+       5        0   {◌𑘰}-{}
+       5        0   {◌𑘽}-{}
+
+-----------------------------------------------------------------------------
+
+------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_1.066_143581_283300
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   16808   Characters
+    1921   Errors
+   88.57%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   88.57%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+    1644      109      168     1921   Unmarked
+    1644      109      168     1921   Total
+
+   Count   Missed   %Right
+   13733     1433    89.57   Unassigned
+    2099      199    90.52   ASCII Spacing Characters
+     916      115    87.45   ASCII Special Symbols
+      60        6    90.00   General Punctuation
+   16808     1753    89.57   Total
+
+  Errors   Marked   Correct-Generated
+     117        0   {-𑘧◌𑘰 _𑘡𑘪...}-{}
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+*************************************************************************
+data/modi/tessdata_fast/modiLayer_1.107_133385_254800.traineddata
+modiLayer_1.107_133385_254800.traineddata
+modiLayer_1.107_133385_254800
+
+***** Modi *****   modiLayer_1.107_133385_254800  
+
+
+----------------------------------------------------------------------------- modi
+
+------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_1.107_133385_254800
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   12546   Characters
+     103   Errors
+   99.18%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   99.18%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+      49       34       20      103   Unmarked
+      49       34       20      103   Total
+
+   Count   Missed   %Right
+   10844       83    99.23   Unassigned
+    1702        0   100.00   ASCII Spacing Characters
+   12546       83    99.34   Total
+
+  Errors   Marked   Correct-Generated
+      14        0   {𑘨◌𑘿}-{}
+       8        0   {◌𑘽}-{}
+       6        0   {}-{𑘨◌𑘿}
+
+-----------------------------------------------------------------------------
+
+------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_1.107_133385_254800
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   16808   Characters
+    1926   Errors
+   88.54%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   88.54%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+    1630      125      171     1926   Unmarked
+    1630      125      171     1926   Total
+
+   Count   Missed   %Right
+   13733     1435    89.55   Unassigned
+    2099      197    90.61   ASCII Spacing Characters
+     916      116    87.34   ASCII Special Symbols
+      60        7    88.33   General Punctuation
+   16808     1755    89.56   Total
+
+  Errors   Marked   Correct-Generated
+     117        0   {-𑘧◌𑘰 _𑘡𑘪...}-{}
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+*************************************************************************
+data/modi/tessdata_fast/modiLayer_1.159_132711_252900.traineddata
+modiLayer_1.159_132711_252900.traineddata
+modiLayer_1.159_132711_252900
+
+***** Modi *****   modiLayer_1.159_132711_252900  
+
+
+----------------------------------------------------------------------------- modi
+
+------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_1.159_132711_252900
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   12546   Characters
+     105   Errors
+   99.16%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   99.16%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+      48       39       18      105   Unmarked
+      48       39       18      105   Total
+
+   Count   Missed   %Right
+   10844       87    99.20   Unassigned
+    1702        0   100.00   ASCII Spacing Characters
+   12546       87    99.31   Total
+
+  Errors   Marked   Correct-Generated
+      16        0   {𑘨◌𑘿}-{}
+       7        0   {◌𑘽}-{}
+       6        0   {}-{𑘨◌𑘿}
+
+-----------------------------------------------------------------------------
+
+------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_1.159_132711_252900
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   16808   Characters
+    1940   Errors
+   88.46%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   88.46%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+    1636      127      177     1940   Unmarked
+    1636      127      177     1940   Total
+
+   Count   Missed   %Right
+   13733     1439    89.52   Unassigned
+    2099      199    90.52   ASCII Spacing Characters
+     916      119    87.01   ASCII Special Symbols
+      60        6    90.00   General Punctuation
+   16808     1763    89.51   Total
+
+  Errors   Marked   Correct-Generated
+     117        0   {-𑘧◌𑘰 _𑘡𑘪...}-{}
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+*************************************************************************
+data/modi/tessdata_fast/modiLayer_1.207_131700_250100.traineddata
+modiLayer_1.207_131700_250100.traineddata
+modiLayer_1.207_131700_250100
+
+***** Modi *****   modiLayer_1.207_131700_250100  
+
+
+----------------------------------------------------------------------------- modi
+
+------------------------------------------------------------------- Modi modi-Noto_Sans_Modi-modiLayer_1.207_131700_250100
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   12546   Characters
+      73   Errors
+   99.42%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   99.42%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+      30       26       17       73   Unmarked
+      30       26       17       73   Total
+
+   Count   Missed   %Right
+   10844       56    99.48   Unassigned
+    1702        0   100.00   ASCII Spacing Characters
+   12546       56    99.55   Total
+
+  Errors   Marked   Correct-Generated
+      10        0   {𑘨◌𑘿}-{}
+       6        0   {}-{𑘨◌𑘿}
+       6        0   {◌𑘽}-{}
+
+-----------------------------------------------------------------------------
+
+------------------------------------------------------------------- Modi modi-MarathiCursiveT_Medium-modiLayer_1.207_131700_250100
+ocreval Accuracy Report Version 7.0
+-----------------------------------
+   16808   Characters
+    1931   Errors
+   88.51%  Accuracy
+
+       0   Reject Characters
+       0   Suspect Markers
+       0   False Marks
+    0.00%  Characters Marked
+   88.51%  Accuracy After Correction
+
+     Ins    Subst      Del   Errors
+       0        0        0        0   Marked
+    1624      127      180     1931   Unmarked
+    1624      127      180     1931   Total
+
+   Count   Missed   %Right
+   13733     1427    89.61   Unassigned
+    2099      200    90.47   ASCII Spacing Characters
+     916      117    87.23   ASCII Special Symbols
+      60        7    88.33   General Punctuation
+   16808     1751    89.58   Total
+
+  Errors   Marked   Correct-Generated
+     117        0   {-𑘧◌𑘰 _𑘡𑘪...}-{}
+
+-----------------------------------------------------------------------------
+
+-----------------------------------------------------------------------------
+
+*************************************************************************
+real 631.51
+user 634.96
+sys 6.11
